@@ -1,8 +1,8 @@
 $CC = "clang"
 
 $SRC = @(
-    "../src/main.c"
-    "../src/logger.c"
+    "src/main.c"
+    "src/logger.c"
 )
 
 $CFLAGS = @(
@@ -10,7 +10,7 @@ $CFLAGS = @(
     "-nostdlib"
     "-ffreestanding"
     "-fno-builtin"
-    "-I../include"
+    "-Iinclude"
 )
 
 $LDFLAGS = @(
@@ -19,6 +19,6 @@ $LDFLAGS = @(
     "-lkernel32"
 )
 
-$OUT = "../build/a.exe"
+$OUT = "build/a.exe"
 
 & $CC $SRC $CFLAGS $LDFLAGS -o $OUT
