@@ -1,4 +1,3 @@
-#include <windows.h>
 #include "logger.h"
 
 static HANDLE hOut;
