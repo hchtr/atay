@@ -17,6 +17,6 @@ $LDFLAGS = @(
     "-lkernel32"
 )
 
-$OUT = "build/a.exe"
+$OUT = "../build/a.exe"
 
 & $CC $SRC $CFLAGS $LDFLAGSi -o $OUT
