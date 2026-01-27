@@ -3,7 +3,7 @@
 void start() {
     initConsole();
 
-    logConsole(LOG_WARNING, "test2\n");
+    logConsole(LOG_WARNING, "test3\n");
 
     ExitProcess(0);
 }
