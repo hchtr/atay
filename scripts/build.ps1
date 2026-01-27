@@ -19,4 +19,4 @@ $LDFLAGS = @(
 
 $OUT = "../build/a.exe"
 
-& $CC $SRC $CFLAGS $LDFLAGSi -o $OUT
+& $CC $SRC $CFLAGS $LDFLAGS -o $OUT
