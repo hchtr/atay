@@ -3,7 +3,7 @@
 void start() {
     initConsole();
 
-    logConsole(LOG_INFO, "Hello, World\n");
+    logConsole(LOG_INFO, "Hello, World!\n");
 
     ExitProcess(0);
 }
