@@ -1,13 +1,9 @@
-#include <windows.h>
+#include "logger.h"
 
 void start() {
-    
-    char buffer[] = "Hello, World!";
+    initConsole();
 
-    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
-    DWORD written;
-
-    WriteFile(hOut, buffer, sizeof(buffer), &written, 0);
+    logConsole(LOG_WARNING, "test\n");
 
     ExitProcess(0);
 }
