@@ -2,6 +2,7 @@ $CC = "clang"
 
 $SRC = @(
     "../src/main.c"
+    "../src/logger.c"
 )
 
 $CFLAGS = @(
@@ -9,6 +10,7 @@ $CFLAGS = @(
     "-nostdlib"
     "-ffreestanding"
     "-fno-builtin"
+    "-I../include"
 )
 
 $LDFLAGS = @(
