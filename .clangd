@@ -1,0 +1,8 @@
+CompileFlags:
+  Add:
+    - -working-directory=C:/HCHTR/repos/atay
+    - -O2
+    - -nostdlib
+    - -ffreestanding
+    - -fno-builtin
+    - -Iinclude
