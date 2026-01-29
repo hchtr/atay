@@ -32,5 +32,12 @@ $LDFLAGS = @(
     "-lkernel32"
 )
 
-$OUT = "$rootDir/build/a.exe"
+$buildDir = Join-Path $rootDir 'build'
+
+if (-not (Test-Path $buildDir)) {
+    New-Item -ItemType Directory -Path $buildDir | Out-Null
+}
+
+$OUT = Join-Path $buildDir 'a.exe'
+
 & $CC $SRC $CFLAGS $LDFLAGS -o $OUT
