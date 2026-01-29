@@ -1,24 +1,36 @@
+$rootDir = "$env:HCHTR_HOME/repos/atay"
+
 $CC = "clang"
 
-$SRC = @(
-    "src/main.c"
-    "src/logger.c"
-)
+$SRC = Get-ChildItem "$rootDir/src" -Filter *.c | ForEach-Object { $_.FullName }
 
 $CFLAGS = @(
     "-O2"
     "-nostdlib"
     "-ffreestanding"
     "-fno-builtin"
-    "-Iinclude"
+    "-I$rootDir/include"
 )
+
+$compileCommandsFile = "$rootDir/compile_commands.json"
+if (Test-Path $compileCommandsFile) { Remove-Item $compileCommandsFile }
+
+$compileCommands = @()
+foreach ($file in $SRC) {
+    $compileCommands += @{
+        directory = $rootDir
+        command   = "$CC $($CFLAGS -join ' ') -c $file"
+        file      = $file
+    }
+}
+
+$compileCommands | ConvertTo-Json -Depth 3 | Out-File -Encoding UTF8 $compileCommandsFile
 
 $LDFLAGS = @(
     "-Wl,-entry:start"
-    "-Wl,-subsystem:console" 
+    "-Wl,-subsystem:console"
     "-lkernel32"
 )
 
-$OUT = "build/a.exe"
-
+$OUT = "$rootDir/build/a.exe"
 & $CC $SRC $CFLAGS $LDFLAGS -o $OUT
