@@ -28,7 +28,7 @@ $compileCommands | ConvertTo-Json -Depth 3 | Out-File -Encoding UTF8 $compileCom
 
 $LDFLAGS = @(
     "-Wl,-entry:start"
-    "-Wl,-subsystem:console"
+    "-Wl,-subsystem:windows"
     "-lkernel32"
 	"-luser32"
 	"-lgdi32"
