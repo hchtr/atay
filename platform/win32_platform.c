@@ -53,7 +53,6 @@ HWND win32_init_window(int width, int height, const char* title) {
 int win32_is_running(void) {
 	return global_running;
 }
-
 void win32_process_messages(void) {
 	MSG msg;
 	while(PeekMessageA(&msg, 0, 0, 0, PM_REMOVE)) {		
@@ -77,3 +76,18 @@ void win32_init_buffer(int width, int height) {
     int buffer_size = width * height * sizeof(unsigned int);
     global_backbuffer.memory = VirtualAlloc(0, buffer_size, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
 }
+
+void win32_display_buffer(int width, int height, HWND window) {
+		HDC hdc = GetDC(window);
+        StretchDIBits(
+            hdc,
+            0, 0, width, height,
+			0, 0, width, height, 
+			global_backbuffer.memory,
+            &global_bitmap_info,
+            DIB_RGB_COLORS,
+            SRCCOPY
+        );
+        ReleaseDC(window, hdc);
+} 
+

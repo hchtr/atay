@@ -18,21 +18,10 @@ int start() {
 		win32_process_messages();
 	
 		atay_clear_screen(&global_backbuffer, 0x000000);
-
 		atay_draw_line(&global_backbuffer, 0, 0, width, height, 0xFFFFFF);
 		atay_draw_line(&global_backbuffer, width, 0, 0, height, 0xFFFFFF);
 
-		HDC hdc = GetDC(window);
-        StretchDIBits(
-            hdc,
-            0, 0, width, height,
-			0, 0, width, height, 
-			global_backbuffer.memory,
-            &global_bitmap_info,
-            DIB_RGB_COLORS,
-            SRCCOPY
-        );
-        ReleaseDC(window, hdc);
+		win32_display_buffer(width, height, window);
 	}
 
 	ExitProcess(0);
