@@ -25,7 +25,6 @@ void atay_clear_screen(PixelBuffer* buffer, unsigned int color) {
             (unsigned long)(buffer->width * buffer->height));
 }
 
-
 void atay_draw_hline(PixelBuffer* buffer, int x1, int x2, int y, unsigned int color) {
     if (y < 0 || y >= buffer->height) return;
     if (x1 > x2) { int t = x1; x1 = x2; x2 = t; }
