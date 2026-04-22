@@ -47,11 +47,10 @@ int win32_is_running(void) {
 
 void win32_process_messages(void) {
 	MSG msg;
-		while(PeekMessageA(&msg, 0, 0, 0, PM_REMOVE)) {		
-			if (msg.message == WM_QUIT) global_running = 0;
-				TranslateMessage(&msg);
-				DispatchMessageA(&msg);			
-		}
-
+	while(PeekMessageA(&msg, 0, 0, 0, PM_REMOVE)) {		
+		if (msg.message == WM_QUIT) global_running = 0;
+			TranslateMessage(&msg);
+			DispatchMessageA(&msg);			
+	}
 }
 
