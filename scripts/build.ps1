@@ -30,6 +30,8 @@ $LDFLAGS = @(
     "-Wl,-entry:start"
     "-Wl,-subsystem:console"
     "-lkernel32"
+	"-luser32"
+	"-lgdi32"
 )
 
 $buildDir = Join-Path $rootDir 'build'
