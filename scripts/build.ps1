@@ -2,7 +2,7 @@ $rootDir = "$env:HCHTR_HOME/repos/atay"
 
 $CC = "clang"
 
-$SRC = Get-ChildItem "$rootDir/src" -Filter *.c | ForEach-Object { $_.FullName }
+$SRC = Get-ChildItem "$rootDir/src", "$rootDir/platform" -Filter *.c | ForEach-Object { $_.FullName }
 
 $CFLAGS = @(
     "-O2"
