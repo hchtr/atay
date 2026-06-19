@@ -1,7 +1,13 @@
 # atay
 
-a C project focused on building a clean, performant rendering layer from scratch using [SDL](https://www.libsdl.org/).
+C project focused on building a clean, performant rendering layer from scratch using [SDL](https://www.libsdl.org/).
 
+## Developer Tooling
+
+* **Language Standard:** C17
+* **Build System:** CMake with Ninja
+* **LSP Support:** Automatically links `compile_commands.json` to the root directory for seamless clangd/LSP detection
+  
 ## Getting Started
 
 ### Clone
@@ -15,10 +21,10 @@ git clone --recursive git@github.com:hchtr/atay.git
 Choose between the **Debug** or **Release** CMake presets:
 
 ```bash
-# configure Debug build
+# Debug
 cmake --preset Debug
 
-# configure Release build
+# Release
 cmake --preset Release
 ```
 
@@ -26,9 +32,9 @@ cmake --preset Release
 Once configured, initiate the *Ninja* build system using the corresponding preset:
 
 ```bash
-# build Debug binary
+# Debug
 cmake --build --preset Debug
 
-# build Release binary
+# Release
 cmake --build --preset Release
 ```
