@@ -1,6 +1,6 @@
 # Atay Rendering Layer
 
-The name *Atay* (أتاي, pronounced "ah-tay") is the Moroccan Arabic word for "tea", which perfectly fits the project's minimalist and refreshing approach.
+The name **Atay** (أتاي, pronounced "ah-tay") is the Moroccan Arabic word for "tea", which perfectly fits the project's minimalist and refreshing approach.
   
 ## Getting Started
 
