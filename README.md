@@ -1,6 +1,6 @@
-# atay
+# Atay Rendering Layer
 
-A C project focused on building a clean, performant rendering layer from scratch using [SDL](https://www.libsdl.org/).
+The name *Atay* (أتاي, pronounced "ah-tay") is the Moroccan Arabic word for "tea", which perfectly fits the project's minimalist and refreshing approach.
   
 ## Getting Started
 
