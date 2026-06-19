@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.23)
 
-project(atay LANGUAGES C)
+project(game LANGUAGES C)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
@@ -18,6 +18,6 @@ if(CMAKE_EXPORT_COMPILE_COMMANDS)
         COMMAND ${CMAKE_COMMAND} -E copy_if_different
         "${CMAKE_BINARY_DIR}/compile_commands.json"
         "${CMAKE_SOURCE_DIR}/compile_commands.json"
-        COMMENT "compile_commands.json in atay/ for local LSP detection"
+        COMMENT "compile_commands.json in game/ for local LSP detection"
     )
 endif()
