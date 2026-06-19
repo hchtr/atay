@@ -29,7 +29,7 @@ cmake --preset Release
 ```
 
 ### Build
-Once configured, initiate the *Ninja* build system using the corresponding preset:
+Once configured, initiate the *Ninja* generator using the corresponding preset:
 
 ```bash
 # Debug
