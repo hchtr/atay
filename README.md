@@ -1,4 +1,4 @@
-# Atay Game
+# Game
 
 ## Getting Started
 
@@ -6,7 +6,7 @@
 This project uses Git submodules for dependencies. To clone the repository, use:
 
 ```bash
-git clone --recursive git@github.com:hchtr/atay.git
+git clone --recursive git@github.com:hchtr/game.git
 ```
 
 ### Configure
