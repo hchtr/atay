@@ -5,7 +5,7 @@ The name **Atay** (أتاي, pronounced "ah-tay") is the Moroccan Arabic word fo
 ## Getting Started
 
 ### Clone
-This project uses Git submodules for dependencies. To clone the repository and fetch SDL, use:
+This project uses Git submodules for dependencies. To clone the repository, use:
 
 ```bash
 git clone --recursive git@github.com:hchtr/atay.git
