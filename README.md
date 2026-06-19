@@ -3,14 +3,12 @@
 ## Getting Started
 
 ### Clone
-This project uses Git submodules for dependencies. To clone the repository, use:
 
 ```bash
 git clone --recursive git@github.com:hchtr/game.git
 ```
 
 ### Configure
-Choose between the **Debug** or **Release** CMake presets:
 
 ```bash
 # Debug
@@ -21,7 +19,6 @@ cmake --preset Release
 ```
 
 ### Build
-Once configured, initiate the *Ninja* generator using the corresponding preset:
 
 ```bash
 # Debug
