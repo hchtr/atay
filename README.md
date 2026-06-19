@@ -1,5 +1,3 @@
-The name **Atay** (أتاي, pronounced "ah-tay") is the Moroccan Arabic word for "tea", which perfectly fits the game's refreshing approach.
-  
 ## Getting Started
 
 ### Clone
