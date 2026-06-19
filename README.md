@@ -1,6 +1,6 @@
 # atay
 
-C project focused on building a clean, performant rendering layer from scratch using [SDL](https://www.libsdl.org/).
+A C project focused on building a clean, performant rendering layer from scratch using [SDL](https://www.libsdl.org/).
 
 ## Developer Tooling
 
