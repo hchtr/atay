@@ -1,12 +1,6 @@
 # atay
 
 A C project focused on building a clean, performant rendering layer from scratch using [SDL](https://www.libsdl.org/).
-
-## Developer Tooling
-
-* **Language Standard:** C17
-* **Build System:** CMake with Ninja
-* **LSP Support:** Automatically links `compile_commands.json` to the root directory for seamless clangd/LSP detection
   
 ## Getting Started
 
