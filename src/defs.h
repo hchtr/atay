@@ -1,0 +1,3 @@
+#define LOGICAL_WIDTH  1920
+#define LOGICAL_HEIGHT 1080
+
