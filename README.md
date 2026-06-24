@@ -1,4 +1,4 @@
-# Game
+# SDL
 
 ## Getting Started
 
