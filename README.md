@@ -5,7 +5,7 @@
 ### Clone
 
 ```bash
-git clone --recursive git@github.com:hchtr/game.git
+git clone --recursive git@github.com:hchtr/sdl.git
 ```
 
 ### Configure
