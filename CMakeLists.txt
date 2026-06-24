@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.23)
 
-project(game LANGUAGES C)
+project(canvas LANGUAGES C)
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}")
